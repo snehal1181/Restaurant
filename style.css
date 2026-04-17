@@ -1,0 +1,45 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    background-color: #f8f9fa !important;
+}
+
+.nav-link {
+    color: #333 !important;
+}
+
+.nav-link:hover {
+    color: #6c757d !important;
+}
+
+.carousel-item {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+    border-radius: 1rem;
+}
+
+.form-control {
+    border-radius: 1rem;
+}
+
+.btn-primary {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+.btn-primary:hover {
+    background-color: #e0a800 !important;
+    border-color: #e0a800 !important;
+}
