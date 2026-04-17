@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu | Golden Crown</title>
+  <meta name="description" content="Explore our exquisite, multi-course dining options crafted by master chefs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Page Loader -->
+<div id="page-loader">
+  <span class="loader-logo">Golden Crown</span>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Golden Crown</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="nav-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<header class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80');"></div>
+  <div class="page-hero-content">
+    <h1>Our Menu</h1>
+    <p>A Symphony of Flavours</p>
+    <div class="breadcrumb-nav">
+      <a href="index.html">Home</a> <span>/</span> <span style="color:white;">Menu</span>
+    </div>
+  </div>
+</header>
+
+<!-- Menu Section -->
+<section class="section">
+  <div class="section-inner">
+    <div style="text-align:center; margin-bottom: 2rem;">
+      <span class="section-label reveal">Discover</span>
+      <h2 class="section-title reveal">Culinary <span>Masterpieces</span></h2>
+      <div class="section-divider center reveal"></div>
+    </div>
+
+    <!-- Menu Categorise Tabs -->
+    <div class="menu-tabs reveal">
+      <button class="menu-tab-btn active" data-category="starters">Starters</button>
+      <button class="menu-tab-btn" data-category="mains">Main Course</button>
+      <button class="menu-tab-btn" data-category="desserts">Desserts</button>
+      <button class="menu-tab-btn" data-category="beverages">Beverages & Wine</button>
+    </div>
+
+    <!-- Starters -->
+    <div class="menu-panel active" id="starters">
+      <div class="glass-card menu-item reveal">
+        <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=400&q=80" alt="Tartare" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h4 class="menu-item-name">Wagyu Beef Tartare</h4>
+            <span class="menu-item-price">₹1,800</span>
+          </div>
+          <p class="menu-item-desc">Hand-cut Wagyu, quail egg yolk, capers, shallots, and toasted brioche.</p>
+          <span class="menu-item-tag tag-chef">Chef's Special</span>
+        </div>
+      </div>
+      
+      <div class="glass-card menu-item reveal">
+        <img src="https://images.unsplash.com/photo-1626844131082-256783844137?w=400&q=80" alt="Burrata" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h4 class="menu-item-name">Heirloom Tomato & Burrata</h4>
+            <span class="menu-item-price">₹1,200</span>
+          </div>
+          <p class="menu-item-desc">Fresh Puglia burrata, balsamic caviar, basil oil, and microgreens.</p>
+          <span class="menu-item-tag tag-veg">Vegetarian</span>
+        </div>
+      </div>
+
+      <div class="glass-card menu-item reveal">
+        <img src="https://images.unsplash.com/photo-1599321557088-3e41b9c1b3f7?w=400&q=80" alt="Oysters" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h4 class="menu-item-name">Oysters Rockefeller</h4>
+            <span class="menu-item-price">₹2,100</span>
+          </div>
+          <p class="menu-item-desc">Baked half-shell oysters with spinach, Pernod wine sauce, and pecorino crust.</p>
+        </div>
+      </div>
+      
+      <div class="glass-card menu-item reveal">
+        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80" alt="Soup" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h4 class="menu-item-name">Truffle Mushroom Velouté</h4>
+            <span class="menu-item-price">₹1,100</span>
+          </div>
+          <p class="menu-item-desc">Wild mushroom cream soup finished with white truffle oil and crispy leeks.</p>
+          <span class="menu-item-tag tag-veg">Vegetarian</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mains -->
+    <div class="menu-panel" id="mains">
+      <div class="glass-card menu-item">
+        <img src="https://images.unsplash.com/photo-1544025162-8111500c22aa?w=400&q=80" alt="Lobster" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h4 class="menu-item-name">Lobster Thermidor</h4>
+            <span class="menu-item-price">₹4,200</span>
+          </div>
+          <p class="menu-item-desc">Poached Maine lobster tail, cognac cream mustard sauce, gruyère gratin.</p>
+          <span class="menu-item-tag tag-chef">Signature</span>
+        </div>
+      </div>
+
+      <div class="glass-card menu-item">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="Steak" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h4 class="menu-item-name">A4 Wagyu Ribeye</h4>
+            <span class="menu-item-price">₹7,500</span>
+          </div>
+          <p class="menu-item-desc">Charcoal-grilled Ribeye, fondant potatoes, charred asparagus, Shiraz demi-glace.</p>
+        </div>
+      </div>
+
+      <div class="glass-card menu-item">
+        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&q=80" alt="Salmon" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h4 class="menu-item-name">Pan-Seared Ora King Salmon</h4>
+            <span class="menu-item-price">₹3,400</span>
+          </div>
+          <p class="menu-item-desc">Saffron risotto, sautéed samphire, dill beurre blanc.</p>
+        </div>
+      </div>
+
+      <div class="glass-card menu-item">
+        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80" alt="Risotto" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h4 class="menu-item-name">Saffron & Black Truffle Risotto</h4>
+            <span class="menu-item-price">₹2,800</span>
+          </div>
+          <p class="menu-item-desc">Arborio rice, 24-month Parmigiano-Reggiano, fresh black truffle shavings.</p>
+          <span class="menu-item-tag tag-veg">Vegetarian</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-panel" id="desserts">
+      <div class="glass-card menu-item">
+        <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=400&q=80" alt="Souffle" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h4 class="menu-item-name">Grand Marnier Soufflé</h4>
+            <span class="menu-item-price">₹1,400</span>
+          </div>
+          <p class="menu-item-desc">Classic baked soufflé with crème anglaise and candied orange peel. (Allow 20 mins)</p>
+          <span class="menu-item-tag tag-chef">Preparation Time Req.</span>
+        </div>
+      </div>
+
+      <div class="glass-card menu-item">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80" alt="Tiramisu" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h4 class="menu-item-name">Deconstructed Tiramisu</h4>
+            <span class="menu-item-price">₹1,100</span>
+          </div>
+          <p class="menu-item-desc">Espresso sponge, mascarpone mousse, Kahlua gel, dark cocoa dust.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beverages -->
+    <div class="menu-panel" id="beverages">
+      <div class="glass-card menu-item">
+        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&q=80" alt="Wine" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h4 class="menu-item-name">Château Margaux 2010 (Bottle)</h4>
+            <span class="menu-item-price">₹85,000</span>
+          </div>
+          <p class="menu-item-desc">Premier Grand Cru Classé. Notes of cassis, violets, and graphite.</p>
+        </div>
+      </div>
+
+      <div class="glass-card menu-item">
+        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&q=80" alt="Cocktail" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h4 class="menu-item-name">Smoked Old Fashioned</h4>
+            <span class="menu-item-price">₹1,500</span>
+          </div>
+          <p class="menu-item-desc">Woodford Reserve, maple syrup, angostura bitters, hickory smoke.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <span class="footer-brand-name">Golden Crown</span>
+      <p class="footer-tagline">A sanctuary of flavour, elegance, and exceptional hospitality since 1998.</p>
+      <div class="footer-social">
+        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+        <a href="#" class="social-icon" aria-label="YouTube">▶️</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Opening Hours</h4>
+      <ul>
+        <li><a>Mon – Thu: 6pm – 11pm</a></li>
+        <li><a>Fri – Sat: 6pm – 12am</a></li>
+        <li><a>Sunday: 12pm – 10pm</a></li>
+        <li><a>Brunch: Sat & Sun 12pm</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><a>📍 12, Gulmohar Marg, Mumbai</a></li>
+        <li><a>📞 +91 98765 43210</a></li>
+        <li><a>✉️ dine@lmrrestaurant.in</a></li>
+        <li><a href="contact.html">Reserve a Table →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Golden Crown. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

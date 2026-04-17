@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Reservations | Golden Crown</title>
+  <meta name="description" content="Book your table or get in touch with Golden Crown for private events and inquiries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Page Loader -->
+<div id="page-loader">
+  <span class="loader-logo">Golden Crown</span>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Golden Crown</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="nav-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<header class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1544148103-0773bf10d330?w=1600&q=80');"></div>
+  <div class="page-hero-content">
+    <h1>Reservations</h1>
+    <p>We await your arrival</p>
+    <div class="breadcrumb-nav">
+      <a href="index.html">Home</a> <span>/</span> <span style="color:white;">Contact</span>
+    </div>
+  </div>
+</header>
+
+<!-- Contact Section -->
+<section class="section">
+  <div class="section-inner">
+    <div class="contact-grid">
+      
+      <!-- Info Col -->
+      <div class="contact-info reveal">
+        <h3>Get In Touch</h3>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">We are always delighted to assist with reservations, private dining inquiries, or any special requests you might have.</p>
+        
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-item-text">
+            <h5>Our Location</h5>
+            <p>12, Gulmohar Marg, <br>Colaba, Mumbai, 400001</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-item-text">
+            <h5>Reservations</h5>
+            <p>+91 98765 43210 <br>+91 98765 43211</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-item-text">
+            <h5>Email Inquiries</h5>
+            <p>dine@lmrrestaurant.in <br>events@lmrrestaurant.in</p>
+          </div>
+        </div>
+
+        <div class="contact-hours">
+          <h4>Opening Hours</h4>
+          <div class="hours-row">
+            <span>Monday – Thursday</span>
+            <span>18:00 – 23:00</span>
+          </div>
+          <div class="hours-row">
+            <span>Friday & Saturday</span>
+            <span>18:00 – 00:00</span>
+          </div>
+          <div class="hours-row">
+            <span>Sunday</span>
+            <span>12:00 – 22:00</span>
+          </div>
+          <div class="hours-row">
+            <span>Weekend Brunch</span>
+            <span>12:00 – 15:30</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Col -->
+      <div class="contact-form glass-card reveal">
+        <h3>Book A Table</h3>
+        <p>Please reserve at least 48 hours in advance for dinner.</p>
+
+        <form id="reservation-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required placeholder="john@example.com">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" required placeholder="+91 90000 00000">
+            </div>
+            <div class="form-group">
+              <label for="guests">Guests</label>
+              <select id="guests" required>
+                <option value="1">1 Person</option>
+                <option value="2" selected>2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7+">7+ (Private Dining)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Time</label>
+              <input type="time" id="time" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Special Requests (Allergy, Anniversary, etc.)</label>
+            <textarea id="message" placeholder="Please let us know how we can make your visit special..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; margin-top: 1rem;">
+            <span>Confirm Booking Request</span>
+          </button>
+
+          <div class="form-success" id="form-success">
+            Thank you! Your booking request has been received. Our team will contact you shortly to confirm your table.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Map Section (Stylized Placeholder) -->
+<section class="map-section reveal">
+  <div class="map-placeholder">
+    <span>🗺️</span>
+    <p>Google Maps Integration Area</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <span class="footer-brand-name">Golden Crown</span>
+      <p class="footer-tagline">A sanctuary of flavour, elegance, and exceptional hospitality since 1998.</p>
+      <div class="footer-social">
+        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+        <a href="#" class="social-icon" aria-label="YouTube">▶️</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Opening Hours</h4>
+      <ul>
+        <li><a>Mon – Thu: 6pm – 11pm</a></li>
+        <li><a>Fri – Sat: 6pm – 12am</a></li>
+        <li><a>Sunday: 12pm – 10pm</a></li>
+        <li><a>Brunch: Sat & Sun 12pm</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><a>📍 12, Gulmohar Marg, Mumbai</a></li>
+        <li><a>📞 +91 98765 43210</a></li>
+        <li><a>✉️ dine@lmrrestaurant.in</a></li>
+        <li><a href="contact.html">Reserve a Table →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Golden Crown. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

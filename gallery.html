@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Golden Crown</title>
+  <meta name="description" content="A visual tour of the exquisite dishes and ambiance at Golden Crown.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Page Loader -->
+<div id="page-loader">
+  <span class="loader-logo">Golden Crown</span>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Golden Crown</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="nav-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<header class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=1600&q=80');"></div>
+  <div class="page-hero-content">
+    <h1>Visual Diary</h1>
+    <p>Glimpses of Perfection</p>
+    <div class="breadcrumb-nav">
+      <a href="index.html">Home</a> <span>/</span> <span style="color:white;">Gallery</span>
+    </div>
+  </div>
+</header>
+
+<!-- Gallery Section -->
+<section class="section">
+  <div class="section-inner">
+    <div style="text-align:center; margin-bottom: 2rem;">
+      <span class="section-label reveal">Our Spaces & Cuisine</span>
+      <h2 class="section-title reveal">The <span>Gallery</span></h2>
+      <div class="section-divider center reveal"></div>
+    </div>
+
+    <!-- Filters -->
+    <div class="gallery-filter reveal">
+      <button class="filter-btn active" data-filter="all">All Photos</button>
+      <button class="filter-btn" data-filter="interior">Interior & Dining</button>
+      <button class="filter-btn" data-filter="food">Signature Dishes</button>
+      <button class="filter-btn" data-filter="drinks">Wines & Cocktails</button>
+    </div>
+
+    <!-- Masonry Grid -->
+    <div class="gallery-masonry" id="gallery-grid">
+      <!-- Food Items -->
+      <div class="gallery-item food reveal" data-src="https://images.unsplash.com/photo-1544025162-8111500c22aa?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1544025162-8111500c22aa?w=600&q=80" alt="Lobster Thermidor">
+        <div class="gallery-overlay">
+          <div>
+            <h4>Lobster Thermidor</h4>
+            <p>Signature Dish</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="gallery-item interior reveal" data-src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80" alt="Main Dining Room">
+        <div class="gallery-overlay">
+          <div>
+            <h4>Main Dining Room</h4>
+            <p>Interior</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item food reveal" data-src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Wagyu Steak">
+        <div class="gallery-overlay">
+          <div>
+            <h4>A5 Wagyu Beef</h4>
+            <p>Main Course</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item drinks reveal" data-src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80" alt="Wine Pour">
+        <div class="gallery-overlay">
+          <div>
+            <h4>Sommelier Service</h4>
+            <p>Wines & Spirits</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="gallery-item food reveal" data-src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80" alt="Chocolate Dessert">
+        <div class="gallery-overlay">
+          <div>
+            <h4>Dark Chocolate Fondant</h4>
+            <p>Dessert</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item interior reveal" data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Table Setting">
+        <div class="gallery-overlay">
+          <div>
+            <h4>Intimate Table Setting</h4>
+            <p>Interior</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item drinks reveal" data-src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80" alt="Cocktails">
+        <div class="gallery-overlay">
+          <div>
+            <h4>Signature Cocktails</h4>
+            <p>Bar Menu</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item food reveal" data-src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Seared Scallops">
+        <div class="gallery-overlay">
+          <div>
+            <h4>Seared Scallops</h4>
+            <p>Appetizer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">&times;</button>
+  <img src="" alt="Expanded Image" id="lightbox-img">
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <span class="footer-brand-name">Golden Crown</span>
+      <p class="footer-tagline">A sanctuary of flavour, elegance, and exceptional hospitality since 1998.</p>
+      <div class="footer-social">
+        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+        <a href="#" class="social-icon" aria-label="YouTube">▶️</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Opening Hours</h4>
+      <ul>
+        <li><a>Mon – Thu: 6pm – 11pm</a></li>
+        <li><a>Fri – Sat: 6pm – 12am</a></li>
+        <li><a>Sunday: 12pm – 10pm</a></li>
+        <li><a>Brunch: Sat & Sun 12pm</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><a>📍 12, Gulmohar Marg, Mumbai</a></li>
+        <li><a>📞 +91 98765 43210</a></li>
+        <li><a>✉️ dine@lmrrestaurant.in</a></li>
+        <li><a href="contact.html">Reserve a Table →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Golden Crown. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
